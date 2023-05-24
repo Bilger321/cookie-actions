@@ -25,7 +25,9 @@
   ],
 
   "action": {
-    "default_icon": "icons/icon_32.png",
+    "default_icon": {
+        "32": "icons/icon_32.png"
+    },
     "default_title": "LendCache",
     "default_popup": "popup/select_cache.html"
   },
