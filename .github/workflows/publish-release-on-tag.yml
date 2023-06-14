@@ -54,7 +54,7 @@ jobs:
         if: steps.getRelease.outcome != 'success'
         uses: eregon/publish-release@c2c0552ef2dd8209aea2a95c940a156eb8f6e9c1 # pin@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.WORKFLOWS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           release_id: ${{ steps.createRelease.outputs.id }}
 
